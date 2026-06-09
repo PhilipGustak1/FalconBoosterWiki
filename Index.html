@@ -1,131 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Every Falcon 9 (and Heavy) Booster</title>
+<meta charset="UTF-8">
+<title>Every Falcon 9 (and Heavy) Booster</title>
 
-    <style>
-        .toggle {
-            cursor: pointer;
-            padding: 8px;
-            margin: 4px 0;
-            background-color: #e0e0e0;
-            border: 1px solid #ccc;
-            width: fit-content;
-        }
+<style>
+    .toggle {
+        cursor: pointer;
+        padding: 8px;
+        margin: 4px 0;
+        background-color: #e0e0e0;
+        border: 1px solid #ccc;
+        width: fit-content;
+    }
 
-        .content {
-            display: none;
-            margin-left: 20px;
-            margin-top: 5px;
-        }
-    </style>
+    .content {
+        display: none;
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+</style>
 
-    <script>
-        function toggleContent(id) {
-            const element = document.getElementById(id);
-
-            if (element.style.display === "none" || element.style.display === "") {
-                element.style.display = "block";
-            } else {
-                element.style.display = "none";
-            }
-        }
-    </script>
+<script>
+function toggleContent(id) {
+    const element = document.getElementById(id);
+    if (element.style.display === "none" || element.style.display === "") {
+        element.style.display = "block";
+    } else {
+        element.style.display = "none";
+    }
+}
+</script>
 </head>
 
 <body>
 
-    <h1>Every Falcon 9 (and Heavy) Booster</h1>
+<h1>Every Falcon 9 (and Heavy) Booster</h1>
 
-    <img src="fal9.jpg.webp">
+<img src="fal9.jpg.webp" alt="Falcon 9">
 
-    <div class="toggle" onclick="toggleContent('fal9Box')">
-        Falcon 9
-    </div>
+<!-- FALCON 9 GROUP -->
+<div class="toggle" onclick="toggleContent('fal9Box')">Falcon 9</div>
 
-    <div id="fal9Box" class="content">
+<div id="fal9Box" class="content">
 
-        <div class="toggle" onclick="toggleContent('b1101Box')">
-        B1101
-    </div>
+    <!-- B1101 -->
+    <div class="toggle" onclick="toggleContent('b1101Box')">B1101</div>
 
     <div id="b1101Box" class="content">
 
-        <div class="toggle" onclick="toggleContent('launchBox')">
-        Launches
+        <div class="toggle" onclick="toggleContent('launchBox')">Launches</div>
+
+        <div id="launchBox" class="content">
+
+            <strong>Starlink 6-88</strong><br>
+            Launch Date: 04/01/2026<br>
+            Landing Area: ASDS: Just Read The Instructions<br>
+            Flight No. 1
+
+            <br><br>
+
+            <strong>SpaceX Crew 12</strong><br>
+            Launch Date: 13/02/2026<br>
+            Landing Area: LZ-40<br>
+            Flight No. 2<br>
+            Turnaround Time: 40 days<br>
+
+            <div class="toggle" onclick="toggleContent('launchBox')">Fold Up</div>
+
+        </div>
+
+        <div class="toggle" onclick="toggleContent('b1101Box')">Fold Up</div>
+
     </div>
 
-    <div id="launchBox" class="content">
+    <br>
 
-        <strong>Starlink 6-88</strong><br>
-        Launch Date: 04/01/2026<br>
-        Landing Area: ASDS: Just Read The Instructions<br>
-        Flight No. 1
-        <br><br>
+    <!-- B1103 -->
+    <div class="toggle" onclick="toggleContent('b1103Box')">B1103</div>
 
-        <strong>SpaceX Crew 12</strong><br>
-        Launch Date: 13/02/2026<br>
-        Landing Area: LZ-40<br>
-        Flight No. 2<br>
-        Turnaround Time: 40 days<br>
+    <div id="b1103Box" class="content">
 
-        <div class="toggle" onclick="toggleContent('launchBox')">
-                Fold Up
+        <div class="toggle" onclick="toggleContent('launchesBox')">Launches</div>
 
-        <div class="toggle" onclick="toggleContent('b1101Box')">
-                Fold Up
+        <div id="launchesBox" class="content">
 
-        <div class="toggle" onclick="toggleContent('b1103Box')">
-            B1103
-        </div>
+            <strong>Starlink 17-35</strong><br>
+            Launch Date: 07/04/2026<br>
+            Landing Area: ASDS: Of Course I Still Love You<br>
+            Flight No. 1
 
-        <div id="b1103Box" class="content">
+            <br><br>
 
-            <div class="toggle" onclick="toggleContent('launchesBox')">
-                Launches
-            </div>
+            <strong>Starlink 17-42</strong><br>
+            Launch Date: 20/05/2026<br>
+            Landing Area: ASDS: Of Course I Still Love You<br>
+            Flight No. 2<br>
+            Turnaround Time: 43 days
 
-            <div id="launchesBox" class="content">
+            <br><br>
 
-                <strong>Starlink 17-35</strong><br>
-                Launch Date: 07/04/2026<br>
-                Landing Area: ASDS: Of Course I Still Love You<br>
-                Flight No. 1
-
-                <br><br>
-
-                <strong>Starlink 17-42</strong><br>
-                Launch Date: 20/05/2026<br>
-                Landing Area: ASDS: Of Course I Still Love You<br>
-                Flight No. 2<br>
-                Turnaround Time: 43 days
-
-                <br><br>
-
-                <div class="toggle" onclick="toggleContent('launchesBox')">
-                    Fold Up
-                </div>
-
-            </div>
-
-            <br>
-
-            <div class="toggle" onclick="toggleContent('b1103Box')">
-                Fold Up
-            </div>
-
-            </div>
+            <div class="toggle" onclick="toggleContent('launchesBox')">Fold Up</div>
 
         </div>
 
-        <br>
-
-        <div class="toggle" onclick="toggleContent('fal9Box')">
-            Fold Up
-        </div>
+        <div class="toggle" onclick="toggleContent('b1103Box')">Fold Up</div>
 
     </div>
+
+    <br>
+
+    <div class="toggle" onclick="toggleContent('fal9Box')">Fold Up</div>
+
+</div>
 
 </body>
 </html>
